@@ -104,17 +104,18 @@ namespace Casbin.Business
             return model;
         }
 
-        public bool casbinTest()
-        {
-            Enforcer e = new("C:\\Users\\vasanthv\\Desktop\\casbin\\model.conf", "C:\\Users\\vasanthv\\Desktop\\casbin\\policy.csv");
-            subject s = new();
-           return e.Enforce(s, "/data1", "read");
+        //This is used to test ABAC with policy rule.
+        // public bool casbinTest()
+        // {
+        //     Enforcer e = new("C:\\Users\\vasanthv\\Desktop\\casbin\\model.conf", "C:\\Users\\vasanthv\\Desktop\\casbin\\policy.csv");
+        //     subject s = new();
+        //    return e.Enforce(s, "/data1", "read");
             
-        }
+        // }
 
-        class subject
-        {
-            public string Age = "30";
-        }
+        // class subject
+        // {
+        //     public string Age = "30";
+        // }
     }
 }
