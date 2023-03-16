@@ -104,7 +104,6 @@ namespace Casbin.Business
             return model;
         }
 
-        //This is used to test ABAC with policy rule.
         // public bool casbinTest()
         // {
         //     Enforcer e = new("C:\\Users\\vasanthv\\Desktop\\casbin\\model.conf", "C:\\Users\\vasanthv\\Desktop\\casbin\\policy.csv");
